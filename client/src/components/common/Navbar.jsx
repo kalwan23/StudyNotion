@@ -66,7 +66,7 @@ function Navbar() {
                                                         <FaAngleDown />
                                                     </div>
 
-                                                    <div className="invisible absolute left-[50%] translate-x-[-50%] translate-y-[60%] top-[-100%] 
+                                                    <div className="invisible absolute left-[50%] translate-x-[-50%] translate-y-[30%] top-[-100%] 
                                                 flex flex-col rounded-md bg-richblack-5 p-4 text-richblack-900 opacity-0 transtion-all duration-200 group-hover:visible group-hover:opacity-100 lg:w-[200px] group-hover:z-50">
 
                                                         <div className="absolute left-[50%] top-0 translate-x-[80%] translate-y-[-45%] h-6 w-6 rotate-45 rounded bg-richblack-5">

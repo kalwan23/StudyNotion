@@ -20,6 +20,14 @@ database.connect();
 
 app.use(express.json());
 app.use(cookieParser());
+/* middleware */
+app.use(cors(
+    {
+        origin:["https://flynow-five.vercel.app"],
+        methods:["POST","GET","PUT","DELETE"],
+        credentials:true
+    }
+));
 app.use(
     cors({
         origin:'http://localhost:3000',
