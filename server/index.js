@@ -24,7 +24,7 @@ app.use(cookieParser());
 /* middleware */
 app.use(cors(
     {
-        origin:["https://study-notion-three-lake.vercel.app"],
+        origin:['https://study-notion-three-lake.vercel.app'],
         methods:["POST","GET","PUT","DELETE"],
         credentials:true
     }
