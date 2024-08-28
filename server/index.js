@@ -18,22 +18,24 @@ const PORT=process.env.PORT || 4000;
 
 database.connect();
 
+
 app.use(express.json());
 app.use(cookieParser());
 /* middleware */
 app.use(cors(
     {
-        origin:["https://flynow-five.vercel.app"],
+        origin:["https://study-notion-three-lake.vercel.app"],
         methods:["POST","GET","PUT","DELETE"],
         credentials:true
     }
 ));
-app.use(
-    cors({
-        origin:'http://localhost:3000',
-        credentials:true
-    })
-);
+app.use(express.urlencoded({ extended: true }));
+// app.use(
+//     cors({
+//         origin:'http://localhost:3000',
+//         credentials:true
+//     })
+// );
 app.use(
     fileUpload({
         useTempFiles:true,
